@@ -78,7 +78,7 @@ setup_test_environment() {
     
     # Ensure default model exists
     local models_response=$(curl -s "$API/models")
-    local default_exists=$(echo "$models_response" | jq -r '.[] | select(.id == "default_model") | .id // ""')
+    local default_exists=$(echo "$models_response" | jq -r 'try (.[] | select(.id == "default_model") | .id) // ""' 2>/dev/null)
     
     if [ -z "$default_exists" ]; then
         echo "    Creating default model..."
@@ -87,7 +87,7 @@ setup_test_environment() {
             -d '{"id": "default_model", "name": "Default Model", "schema": {"type": "object"}}' > /dev/null
     fi
     
-    test_assert "Default model exists" '[ -n "$(curl -s "$API/models" | jq -r ".[] | select(.id == \"default_model\") | .id")" ]'
+    test_assert "Default model exists" '[ -n "$(curl -s "$API/models" | jq -r "try (.[] | select(.id == \"default_model\") | .id) // \"\"" 2>/dev/null)" ]'
 }
 
 test_model_management() {

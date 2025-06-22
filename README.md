@@ -63,8 +63,8 @@ go.mod
 
 | Component | Language | Binary | Image |
 |-----------|----------|--------|-------|
-| HTTP API  | Go 1.22  | `ingest-api` | `batch-ingest-api:latest` |
-| CLI       | Go 1.22  | `batch`      | `batch-cli:latest` |
+| HTTP API  | Go 1.24.0  | `ingest-api` | `batch-ingest-api:latest` |
+| CLI       | Go 1.24.0  | `batch`      | `batch-cli:latest` |
 
 ## Design Highlights
 
