@@ -31,7 +31,8 @@ Thumbs.db
 *~
 
 # Build artifacts
-bin/
+bin/*
+!bin/batch
 *.log
 
 # Docker volumes
