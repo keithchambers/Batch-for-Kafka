@@ -1,0 +1,7 @@
+event_id,timestamp,attr_float,attr_int,attr_bool,attr_str
+101,1620000101,1.23,147,true,cli_event_101
+102,1620000102,4.56,148,false,cli_event_102
+103,1620000103,7.89,149,true,cli_event_103
+104,1620000104,9.87,150,false,cli_event_104
+105,1620000105,6.54,151,true,cli_event_105
+106,1620000106,3.21,152,false,cli_event_106

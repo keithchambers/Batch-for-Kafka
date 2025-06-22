@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "event_id": {"type": "integer"},
+    "timestamp": {"type": "integer"},
+    "attr_float": {"type": "number"},
+    "attr_int": {"type": "integer"},
+    "attr_bool": {"type": "boolean"},
+    "attr_str": {"type": "string"}
+  },
+  "required": ["event_id", "timestamp"]
+} 

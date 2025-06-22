@@ -1,0 +1,8 @@
+event_id,timestamp,attr_float,attr_int,attr_bool,attr_str
+201,1620000201,1.11,201,true,good_event_201
+malformed"quotes"here,1620000202,2.22,202,false,bad_quotes
+203,1620000203,3.33,203,true,good_event_203
+"unclosed quote field,1620000204,4.44,204,false,unclosed_quote
+205,1620000205,5.55,205,true,good_event_205
+206,1620000206,6.66,206
+207,1620000207,7.77,207,false,good_event_207,extra,fields,here 
